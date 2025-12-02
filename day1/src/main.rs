@@ -63,6 +63,7 @@ impl Dial {
         self.state = (self.state + amount).rem_euclid(100);
     }
 }
+
 fn main() -> Result<(), Box<dyn Error>> {
     let mut args = std::env::args();
     let mut dial = Dial {
